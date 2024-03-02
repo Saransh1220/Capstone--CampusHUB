@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="btnwithlogo">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </div>
+                  
+                <img src="logo.svg" class="logo" alt="">
+            </div>
+            
+            <input type="search" class="search-box" placeholder="Search">
+            <span id="search" class="material-symbols-outlined">
+                search
+                </span>
+            <ul class="navitems">
+                <li>Home</li>
+                <li>About</li>
+                <li><img src="profile.jpg" alt="" class="profile"></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <ul class="sidenav">
+            <li><i class="fa-solid fa-house"></i>Home</li>
+            <li><i class="fa-solid fa-arrow-trend-up"></i>Trending</li>
+            <li><i class="fa-solid fa-chart-simple"></i>All</li>
+        </ul>
+        <hr>
+        <div class="community-section">
+            <h3 class="heading">Communities</h3>
+            <ul class="communities">
+                <li><img src="comimg.jpg" alt="" class="com_logo">Java Programming</li>
+                <li><img src="comimg.jpg" alt="" class="com_logo">Java Programming</li>
+                <li><img src="comimg.jpg" alt="" class="com_logo">Java Programming</li>
+                <li><img src="comimg.jpg" alt="" class="com_logo">Java Programming</li>
+                <li><img src="comimg.jpg" alt="" class="com_logo">Java Programming</li>
+                <li><img src="comimg.jpg" alt="" class="com_logo">Java Programming</li>
+                <li><img src="comimg.jpg" alt="" class="com_logo">Java Programming</li>
+                <li><img src="comimg.jpg" alt="" class="com_logo">Java Programming</li>
+                <li><img src="comimg.jpg" alt="" class="com_logo">Java Programming</li>
+               
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div class="popularcoms">
+            <h3 class="heading" style="opacity: 1; display: flex; justify-content: space-between;">Popular Communities <span><a href="#">View All<i class="fa-solid fa-arrow-right"></i></a></span></h3>
+            <div class="popularlist">
+                <img class="popularimg" src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" draggable="false">
+                <img class="popularimg" src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" draggable="false">
+                <img class="popularimg" src="https://images.pexels.com/photos/14634631/pexels-photo-14634631.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" draggable="false">
+                <img class="popularimg" src="https://images.pexels.com/photos/7818589/pexels-photo-7818589.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" draggable="false">
+                <img class="popularimg" src="https://images.pexels.com/photos/12799626/pexels-photo-12799626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" draggable="false">
+
+                
+            </div>
+        </div>
+        <hr style="margin: 30px 0;">
+        <div class="posts">
+            <div class="post">
+                <div class="communitywhereposted">
+                    <img src="comimg.jpg" alt="" class="com_logo">
+                    <p>@Java Programming</p>
+                </div>
+                <h4 class="posthead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, deserunt.</h4>
+                <img class="postimg" src="https://images.pexels.com/photos/12823414/pexels-photo-12823414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+
+                <div class="reactions">
+                    <div class="updown">
+                        <span class="material-symbols-outlined">
+                            thumb_up
+                            </span>
+                        <span class="material-symbols-outlined">
+                                thumb_down
+                             </span>
+                    </div>
+                    
+                    <span class="material-symbols-outlined comment">
+                            comment
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/9ae168c4ef.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
