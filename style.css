@@ -6,11 +6,9 @@
 
 }
     :root {
-        --main-bg-color: #040D12;
-        --hover-color: #102f3f56;
+        --main-bg-color: rgb(19, 21, 21);
+        --hover-color: rgba(43, 44, 40);
     }
-
-
 
 body{
     font-family: "Quicksand", sans-serif;
@@ -116,7 +114,7 @@ input[type="search"]{
     border-radius: 25px;
     border: none;
     width: 40rem;
-    background: #102f3f56;
+    background: rgb(43, 44, 40);
     box-shadow: rgba(60, 51, 51, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
@@ -204,7 +202,7 @@ input[type="search"]{
 .heading a{
     text-decoration: none;
     color: white;
-    background-color: #223c4956;
+    background-color: rgb(66, 67, 63);
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
@@ -212,7 +210,7 @@ input[type="search"]{
 }
 
 .heading a:hover{
-    background-color: var(--hover-color);
+    background-color: rgb(62, 63, 58);
 }
 
 
@@ -502,5 +500,4 @@ main{
         position: absolute;
         left: -60px;
     }
-
 }
