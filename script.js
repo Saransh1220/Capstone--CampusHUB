@@ -1,4 +1,5 @@
 
+
 const mainSection = document.querySelector('main');
 const sidebar = document.querySelector('.sidebar');
 const search = document.querySelector('#search');
