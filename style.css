@@ -139,8 +139,6 @@ input[type="search"]{
 
 .community-section{
     margin-top: 0px;
-    border-radius: 25px;
-    background: ;
     padding: 40px 40px 40px 20px;
 }
 .communities{
@@ -233,10 +231,9 @@ hr{
     flex-direction: column;
     justify-content: center;
     
-    background: ;
     padding: 20px;
    
-    border-radius: 25px;
+
 }
 
 
@@ -285,6 +282,7 @@ main{
     margin-left: 400px;
     color: white;
 }
+
 
 .popularlist{
     display: flex;
@@ -414,6 +412,24 @@ main{
 
 .material-symbols-outlined:hover{
     opacity: 0.5;
+}
+
+
+.rightsection{
+    
+    padding: 10px 10px 30px 10px;
+    background-color: var(--hover-color);
+    border-radius: 10px;
+
+    .recentheading{      
+        font-size: 24px;
+        opacity: 0.8;
+        margin-bottom: 20px;
+    }
+    .recentimgs{
+        border-radius: 10px;
+        max-width: 300px;
+    }
 }
 
 
