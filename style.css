@@ -128,12 +128,13 @@ input[type="search"]{
     margin-top: 20px;
     color: white;
     max-height: 100%;
-    max-width: 360px;
+    max-width: 380px;
     transition: all 0.3s ease-in-out;
     transform: translateX(0);
     overflow-y: auto;
     border-right: 2px solid #2b2b2b;
     z-index: 99;
+    overscroll-behavior: contain;
     
 }
 
@@ -290,7 +291,14 @@ main{
     gap: 1rem;
     overflow-x: auto;
     align-items: center;
+    overscroll-behavior-inline:contain ;
+    scroll-snap-type:inline mandatory;
    
+}
+
+
+.popularlist > *{
+    scroll-snap-align: start;
 }
 
 .popularlist::-webkit-scrollbar{
@@ -317,11 +325,14 @@ main{
 
 .popularimg{
     border-radius: 10px;
-    max-width: 260px;
+    /* max-width: 260px;
     max-height: 200px;
-    min-height: 200px;
+    min-height: 200px; */
     object-fit: cover;
-    animation: slide 10s infinite;
+    /* animation: slide 10s infinite; */
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    max-height: 200px;
     
 }
 
@@ -446,7 +457,7 @@ main{
         left: 0;
         display:block;
         transform: translateX(0);
-        background: rgba(4, 13, 18, 0.8);
+        background: var(--main-bg-color);
         backdrop-filter: blur(2px);
 
     }
@@ -496,17 +507,19 @@ main{
         width: 100%;
 
         .popularcoms{
-            width: 85vw;
+            width: 90vw;
         }
 
         .posts{
-            width: 85w;
+            width: 90w;
             .post{
-                width: 85vw;
+                width: 90vw;
             }
         }
     }
-
+    .heading a{
+        font-size: 14px;
+    }
     nav{
         padding-right: 20px;
         padding-left: 40px;
