@@ -7,7 +7,7 @@
 }
     :root {
         --main-bg-color: rgb(19, 21, 21);
-        --hover-color: rgba(43, 44, 40);
+        --hover-color: rgb(40, 43, 44);
     }
 
 body{
@@ -277,19 +277,23 @@ hr{
 }
 
 
+
+
 main{
-    width: 70%;
+    width: 95%;
     margin-top: 30px;
     margin-left: 400px;
     color: white;
 }
 
 
+
+
 .popularlist{
     display: flex;
     
     gap: 1rem;
-    overflow-x: auto;
+    overflow-x: scroll;
     align-items: center;
     overscroll-behavior-inline:contain ;
     scroll-snap-type:inline mandatory;
@@ -298,12 +302,12 @@ main{
 
 
 .popularlist > *{
-    scroll-snap-align: start;
+    scroll-snap-align:start;
 }
-
+/* 
 .popularlist::-webkit-scrollbar{
     display: none;
-}
+} */
 
 .popularlist:hover{
     cursor: pointer;
@@ -326,11 +330,11 @@ main{
 .popularimg{
     border-radius: 10px;
     /* max-width: 260px;
-    max-height: 200px;
-    min-height: 200px; */
+    max-height: 200px;*/
+    min-height: 200px; 
     object-fit: cover;
     /* animation: slide 10s infinite; */
-    inline-size: 100%;
+    /* inline-size: 100%; */
     aspect-ratio: 16/9;
     max-height: 200px;
     
@@ -344,8 +348,12 @@ main{
 }
 
 .posts{
-    
+    width: 100%;
+    padding-right: 0;
     .post{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: relative;
         height: 100%;
         width: 70%;
@@ -360,6 +368,7 @@ main{
         .postimg{
             border-radius: 10px;
             margin-top: 40px;
+            align-self: center;
         }
     }
     .post:hover{
@@ -423,24 +432,6 @@ main{
 
 .material-symbols-outlined:hover{
     opacity: 0.5;
-}
-
-
-.rightsection{
-    
-    padding: 10px 10px 30px 10px;
-    background-color: var(--hover-color);
-    border-radius: 10px;
-
-    .recentheading{      
-        font-size: 24px;
-        opacity: 0.8;
-        margin-bottom: 20px;
-    }
-    .recentimgs{
-        border-radius: 10px;
-        max-width: 300px;
-    }
 }
 
 
