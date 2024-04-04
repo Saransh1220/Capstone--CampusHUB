@@ -7,7 +7,7 @@
 }
     :root {
         --main-bg-color: rgb(19, 21, 21);
-        --hover-color: rgb(40, 43, 44);
+        --hover-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,20,0.6) 35%, rgba(255,0,90,0.75) 100%);
     }
 
 body{
@@ -304,10 +304,10 @@ main{
 .popularlist > *{
     scroll-snap-align:start;
 }
-/* 
+
 .popularlist::-webkit-scrollbar{
     display: none;
-} */
+}
 
 .popularlist:hover{
     cursor: pointer;
